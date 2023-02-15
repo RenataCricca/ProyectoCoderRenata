@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
     <title>Técnicas</title>
+
+    <!-- colocando logo para pestaña de la web -->
     <link rel="shortcut icon" href="../multimedia/Img/WhatsApp Image 2023-01-19 at 03.04.58.jpg" type="image/x-icon">
+
+    <!-- linkeando bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Style/style.css">
 </head>
 
 <body class="fondo_tecnicas">
@@ -35,12 +40,69 @@
         <section class="tecnicas">
             <div>
                 <h1 class="titulo_tecnicas">TECNICAS</h1>
-                <p>Existen dentro del mundo de la arcilla y la cerámica diferentes técnicas y procedimientos que se pueden aplicar para lograr diferentes efectos y diferentes texturas... Existen muchisimas!! A continuación te muestro algunas de ellas.. las que mas estoy utilizando en estos últimos tiempos... </p>
-               
-                <div class="tecnicas_flex">
-                    <img class="img_tecnicas1" src="../multimedia/Img/horno raku.jpg" alt="horno raku">   
-                    <img class="img_tecnicas2" src="../multimedia/Img/raku.jpg" alt="raku">
-                    <div ><iframe class="video_tecnicas" src="https://www.youtube.com/embed/4GKhoKyqdY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <p class="texto_tecnicas">Existen dentro del mundo de la arcilla y la cerámica diferentes técnicas y procedimientos que se pueden aplicar para lograr diferentes efectos y diferentes texturas... Existen muchisimas!! A continuación te muestro algunas de ellas.. las que mas estoy utilizando en estos últimos tiempos... </p>
+
+
+            <!-- ***** Aplicando bootstrap ***** -->
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+            
+                    <div class="carousel-inner  ">
+            
+                        <div class="carousel-item active " data-bs-interval="10000">
+                            <div class="d-flex justify-content-around">
+                                <img class="img_tecnica" src="../multimedia/tecnicas/ceramica en torno.jpg" class="d-block w-50" alt="chica en torno">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block ">
+                                <h5 >TECNICA DE ROLLITO COCIDO</h5>
+                                <p >Es una de las tecnicas a modelar en el torno dandole origen a las piezas</p>
+                            </div>
+                        </div>
+            
+                        <div class="carousel-item " data-bs-interval="2000">
+                            <div class="d-flex justify-content-around">
+                                <img class="img_tecnica" src="../multimedia/tecnicas/pintura sobre piezas.jpg" class="d-block w-50" alt="pintura sobre piezas">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pintura a las piezas</h5>
+                                <p>Pincelado a mano de las piezas, dandole identidad</p>
+                            </div>
+                        </div>
+            
+                        <div class="carousel-item ">
+                            <div class="d-flex justify-content-around">
+                                <img class="img_tecnica" src="../multimedia/tecnicas/raku.jpg" class="d-block w-50" alt="imagen raku">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Tecnica de Raku</h5>
+                                <p>Esta es una tecnica sobre humo, efectuado con horno especial para Raku</p>
+                            </div>
+                        </div>
+            
+                        <div class="carousel-item ">
+                            <div class="d-flex justify-content-around">
+                                <img class="img_tecnica" src="../multimedia/tecnicas/horno raku.jpg" class="d-block w-50" alt="horno raku">
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Horno Raku</h5>
+                                <p>Horno especial dedicado para la tecnica Raku</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -53,6 +115,9 @@
             <a href="#"><img src="../multimedia/Img/youtube_logo2.png" alt="icono de youtube"></a>
         </div>
     </footer>
+
+    <!-- linkeando javascrip de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
 </body>
 
 </html>
