@@ -40,7 +40,8 @@ header{
 }
 .menu_item a:hover{
     color: white;
-    font-size: 35px;
+    font-size: 30px;
+    
 }
 .menu_item.active a {
     color: white;
@@ -444,11 +445,11 @@ header{
 .sobre_mi{
     margin: 20px;
     width: 100%;
-    height: 100vh;
+
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 400px auto;
     grid-gap: 20px;
     grid-template-areas: 
     ".                  titulo       ."
@@ -462,7 +463,7 @@ header{
     font-size: 30px;
     text-align: center;
     background-color: rgba(218, 165, 32, 0.442);
-    
+    height: 50px;
 }
 
 .biografia{
@@ -521,7 +522,7 @@ header{
     height: 300px;
     width: 350px;
     margin-top: 40px;
-    margin-left: 40px;
+    margin-inline: 20px;
 
 }
 
@@ -583,19 +584,10 @@ footer{
     
 }
 .footer{
-    margin-top: 80px;
-}
-
-.footer_sobremi{
-    margin-top: 200px;
+    margin-top: 60px;
 }
 
 .footer a img{
-    height: 80px;
-    margin-inline: 20px;
-    border-radius: 80%;
-}
-.footer_sobremi a img{
     height: 80px;
     margin-inline: 20px;
     border-radius: 80%;
@@ -620,7 +612,7 @@ footer{
 
   /* media queries a sobre_mi */
   .sobre_mi{
-      
+      display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat (7 , 1f);
       grid-template-areas: 
@@ -660,12 +652,6 @@ footer{
     margin-inline: 15px;
     
   }
-  .footer_sobremi a img{
-    height: 75px;
-    margin-inline: 15px;
-       
-  }
-  
 }
 
 
@@ -703,12 +689,6 @@ footer{
     height: 50px;
     margin-inline: 10px;
   }
-  .footer_sobremi a img{
-    height: 50px;
-    margin-inline: 10px;
-  }
-
-  
 }
 
   
