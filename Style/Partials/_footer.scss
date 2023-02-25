@@ -1,0 +1,18 @@
+/* aplicando estilos al Footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer{
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    & a{
+        img{
+            height: 80px;
+            margin-inline: 20px;
+            border-radius: 80%;
+        }
+    }
+}
+

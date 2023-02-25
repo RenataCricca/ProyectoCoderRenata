@@ -1,0 +1,34 @@
+/* aplicando estilo a la page tecnicas */
+
+.fondo_tecnicas{
+    background-image: url(../multimedia/Img/mesada\ con\ vajilla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.tecnicas{
+    padding: 20px;
+}
+.titulo_tecnicas{
+    padding-top: 50px;
+    background-color: $colorprincipal;
+    border-radius: 80%;
+    padding: 2px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto_tecnicas{
+    background-color: rgba(218, 165, 32, 0.442);
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.img_tecnica{
+    height: 600px;
+    width: 700px;
+}

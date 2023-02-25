@@ -1,0 +1,49 @@
+/* aplicando estilo a la page productos */
+
+.fondo_productos{
+    background-image: url(../multimedia/Img/fondo\ pantalla\ 3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/***** aplicando estilo con flex a la page productos *****/
+
+.pro{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.productos{
+    width: 300px;
+    background-color:burlywood;
+    border-radius: 10px;
+    margin-inline: 30px;
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+.producto_img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.producto_titulo{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.producto_precio{
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+.producto_button{
+    background-color: chartreuse;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
