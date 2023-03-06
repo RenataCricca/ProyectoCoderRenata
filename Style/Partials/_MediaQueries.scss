@@ -12,6 +12,8 @@
         justify-content: center;
     }
 
+
+
     /* media queries a sobre_mi */
     .sobre_mi{
         display: grid;
@@ -57,6 +59,8 @@
     }
 }
 
+
+
 @media screen and (max-width: 480px) {
 
      /* media queries al nav */
@@ -81,6 +85,15 @@
     .subtitulo_inicio{
         font-size: 20px;
     }
+
+
+    /* media queries a img inicio*/
+.inicio_img{
+    height: 300px;
+    width: 250px;
+}
+
+
     /* media queries a contacto */
     .titulo_contacto{
         font-size: 18px;

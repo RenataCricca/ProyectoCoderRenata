@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&family=Unbounded:wght@200;300;400&display=swap");
+.texto_tecnicas {
+  background-color: rgba(218, 165, 32, 0.442);
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +63,43 @@ header {
   height: 155px;
 }
 
+/*animación del navbar con delay*/
+.animacion {
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+/*Aplicando @for al navbar*/
+.animacion1 {
+  animation-delay: 0.2s;
+}
+
+.animacion2 {
+  animation-delay: 0.4s;
+}
+
+.animacion3 {
+  animation-delay: 0.6s;
+}
+
+.animacion4 {
+  animation-delay: 0.8s;
+}
+
+.animacion5 {
+  animation-delay: 1s;
+}
+
 /* aplicando etilo a la page inicio */
 .inicio {
   padding: 40px;
@@ -82,6 +126,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .subtitulo_inicio {
@@ -102,7 +147,7 @@ header {
 
 /***** agregando animacion a la page inicio *****/
 .titulo_inicio {
-  animation: bounce-in-top 1.5s both;
+  animation: bounce-in-top 2s both;
 }
 @keyframes bounce-in-top {
   0% {
@@ -141,7 +186,7 @@ header {
   }
 }
 .move_img1 {
-  animation: tilt-in-fwd-tl 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-fwd-tl 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @keyframes tilt-in-fwd-tl {
   0% {
@@ -154,7 +199,7 @@ header {
   }
 }
 .move_img2 {
-  animation: puff-in-top 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-top 2.2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 @keyframes puff-in-top {
   0% {
@@ -171,7 +216,7 @@ header {
   }
 }
 .move_img3 {
-  animation: tilt-in-fwd-br 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-fwd-br 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @keyframes tilt-in-fwd-br {
   0% {
@@ -194,23 +239,28 @@ header {
 /***** aplicando estilo con flex a la page productos *****/
 .pro {
   padding: 25px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 30px;
 }
 
 .productos {
   width: 300px;
   background-color: burlywood;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
   border-radius: 10px;
   margin-inline: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
+.productos:hover {
+  transform: translateY(-15px);
+}
 
 .producto_img {
   width: 100%;
+  height: 300px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -221,13 +271,13 @@ header {
 }
 
 .producto_precio {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
 .producto_button {
   background-color: chartreuse;
-  border: none;
+  border: rgba(0, 0, 0, 0.537) solid 5px;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -256,16 +306,13 @@ header {
   text-align: center;
 }
 
-.texto_tecnicas {
-  background-color: rgba(218, 165, 32, 0.442);
-  font-size: 20px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
 .img_tecnica {
   height: 600px;
   width: 700px;
+}
+.img_tecnica:hover {
+  height: 650px;
+  width: 750px;
 }
 
 /* aplicando estilo a la page sobre mi */
@@ -382,7 +429,6 @@ header {
 .cuadro_consulta {
   height: 350px;
   width: 400px;
-  background-color: rgba(218, 165, 32, 0.455);
 }
 
 .consulta {
@@ -400,11 +446,24 @@ header {
   margin-bottom: 10px;
 }
 
+.deco-mapa {
+  width: 650px;
+}
+
 .mapa {
   padding-left: 50px;
   margin-bottom: 50px;
   width: 600px;
   height: 450px;
+}
+
+/*aplicando @each a contacto*/
+.deco-contacto {
+  background-color: rgba(218, 165, 32, 0.455);
+}
+
+.deco-mapa {
+  background-color: rgba(128, 38, 0, 0.608);
 }
 
 /* aplicando estilos al Footer */
@@ -477,6 +536,11 @@ footer {
   }
   .subtitulo_inicio {
     font-size: 20px;
+  }
+  /* media queries a img inicio*/
+  .inicio_img {
+    height: 300px;
+    width: 250px;
   }
   /* media queries a contacto */
   .titulo_contacto {

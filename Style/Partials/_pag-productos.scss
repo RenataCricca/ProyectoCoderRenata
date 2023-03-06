@@ -11,23 +11,29 @@
 
 .pro{
     padding: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     margin-top: 30px;
+
+    // aplicando @mixin
+    @include flex (flex, wrap, space-evenly );
 }
 
 .productos{
     width: 300px;
     background-color:burlywood;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
     border-radius: 10px;
     margin-inline: 30px;
     margin-bottom: 30px;
-
     text-align: center;
+    
+    &:hover{
+        transform: translateY(-15px);
+    }
 }
 .producto_img{
     width: 100%;
+    height: 300px;
+    
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -36,13 +42,13 @@
     margin-bottom: 10px;
 }
 .producto_precio{
-    font-size: 20px;
+    font-size: 15px;
 
     margin-bottom: 10px;
 }
 .producto_button{
     background-color: chartreuse;
-    border: none;
+    border: rgba(0, 0, 0, 0.537) solid 5px;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;

@@ -67,7 +67,7 @@
 
 .video_sobre_mi{
     grid-area: video;
-    margin-top: 40px;
+    margin-top: map-get ($tamaño, tamaño3);
     margin-left: 40px;
     height: 300px;
     width: 450px;
@@ -93,7 +93,7 @@
     height: 300px;
     width: 350px;
     margin-top: 40px;
-    margin-inline: 20px;
+    margin-inline: map-get ($tamaño, tamaño1);
 
 }
 

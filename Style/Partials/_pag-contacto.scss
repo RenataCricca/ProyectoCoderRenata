@@ -25,7 +25,6 @@
     height: 350px;
     width: 400px;
     
-    background-color: rgba(218, 165, 32, 0.455);
 }
 .consulta{
     padding-top: 20px;
@@ -40,11 +39,21 @@
 .ubicacion{
     margin-top: 80px;
     padding-left: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
+}
+.deco-mapa{
+    width: 650px;
 }
 .mapa{
     padding-left: 50px;
     margin-bottom: 50px;
     width: 600px;
     height: 450px;
+}
+
+/*aplicando @each a contacto*/
+@each $content, $color in $fondo{
+    .deco-#{$content} {
+        background-color: $color;
+    }
 }

@@ -4,3 +4,31 @@ $fontprincipal: 'Unbounded', cursive;
 
 $colorprincipal: goldenrod;
 $colorsecundario: white;
+
+// aplicando map (@each) en contacto
+$fondo:(
+    contacto: rgba(218, 165, 32, 0.455),
+    mapa: rgba(128, 38, 0, 0.608),
+);
+
+// Aplicando @extend a tecnicas
+%textotecnica{
+    background-color: rgba(218, 165, 32, 0.442);
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+// Aplicando @mixin a productos
+@mixin flex($flex, $wrap, $position){
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $position;
+}
+
+// Aplicando Map (map-get) a sobre_mi
+$tamaño:(
+    tamaño1: 20px,
+    tamaño2: 30px,
+    tamaño3: 40px,
+);

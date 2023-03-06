@@ -22,13 +22,15 @@
 }
 
 .texto_tecnicas{
-    background-color: rgba(218, 165, 32, 0.442);
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    // Aplicando @extend a tecnicas
+    @extend %textotecnica;
 }
 
 .img_tecnica{
     height: 600px;
     width: 700px;
+    &:hover{
+        height: 650px;
+        width: 750px;
+    }
 }
