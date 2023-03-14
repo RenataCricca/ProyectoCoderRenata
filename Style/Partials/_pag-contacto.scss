@@ -29,8 +29,8 @@
 .cuadro_consulta{
     padding-left: 20px;
     margin-top: 50px;
-    height: 350px;
-    width: 400px;
+    height: 390px;
+    width: 450px;
 
 }
 .consulta{
@@ -39,9 +39,24 @@
     margin-bottom: 10px;
     font-weight: bold;
     text-decoration:underline;
-    font-size: 30px;
-    
-    
+    font-size: 30px;    
+}
+
+
+.flex_contacto{
+    display: flex;
+    justify-content: space-around;
+}
+.flex_contactobutton{
+    display: flex;
+    justify-content: space-evenly;
+}
+.boton_contacto{
+    margin: 10px;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
 }
 
 
@@ -62,12 +77,14 @@
     height: 450px;
 }
 
+.deco-mapa{
+    width: 650px;
+}
+
+
 /*aplicando @each a contacto*/
 @each $content, $color in $fondo{
     .deco-#{$content} {
         background-color: $color;
     }
-}
-.deco-mapa{
-    width: 650px;
 }

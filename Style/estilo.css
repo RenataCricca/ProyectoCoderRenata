@@ -110,7 +110,9 @@ header {
   margin-bottom: 70px;
   border-radius: 50%;
   padding: 10px;
-  background-color: goldenrod;
+  background-color: rgba(112, 75, 7, 0.686);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
   font-size: 45px;
   font-weight: bolder;
   text-align: center;
@@ -132,14 +134,16 @@ header {
 .subtitulo_inicio {
   margin-top: 50px;
   border-radius: 50%;
-  background-color: goldenrod;
+  background-color: rgba(112, 75, 7, 0.686);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
 }
 
 .fondo_inicio {
-  background-image: url(../multimedia/Img/fondo\ completo.webp);
+  background-image: url(../multimedia/Img/fondo\ pantalla\ jarrones.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -323,15 +327,9 @@ header {
   background-attachment: fixed;
 }
 
-.estilo_section {
-  margin: 20px;
-  margin-block: 40px;
-}
-
 /******** aplicando grid a la page sobre mi ******/
 .sobre_mi {
   margin: 20px;
-  width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto 400px auto;
@@ -436,8 +434,8 @@ header {
 .cuadro_consulta {
   padding-left: 20px;
   margin-top: 50px;
-  height: 350px;
-  width: 400px;
+  height: 390px;
+  width: 450px;
 }
 
 .consulta {
@@ -447,6 +445,24 @@ header {
   font-weight: bold;
   text-decoration: underline;
   font-size: 30px;
+}
+
+.flex_contacto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex_contactobutton {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boton_contacto {
+  margin: 10px;
+  padding: 3px;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
 }
 
 /* aplicando estilo a la ubicación y mapa de la page contacto */
@@ -465,6 +481,10 @@ header {
   height: 450px;
 }
 
+.deco-mapa {
+  width: 650px;
+}
+
 /*aplicando @each a contacto*/
 .deco-contacto {
   background-color: rgba(218, 165, 32, 0.455);
@@ -472,10 +492,6 @@ header {
 
 .deco-mapa {
   background-color: rgba(128, 38, 0, 0.608);
-}
-
-.deco-mapa {
-  width: 650px;
 }
 
 /* aplicando estilos al Footer */
@@ -578,7 +594,7 @@ footer {
     width: 350px;
   }
   .deco-contacto {
-    width: 320px;
+    width: 430px;
   }
   /** Media Queries al footer **/
   .footer a img {

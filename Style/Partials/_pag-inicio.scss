@@ -7,7 +7,9 @@
         margin-bottom: 70px;
         border-radius: 50%;
         padding: 10px;
-        background-color: $colorprincipal;
+        background-color: rgba(112, 75, 7, 0.686);
+        color: $colorsecundario;
+        box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
         font-size: 45px;
         font-weight: bolder;
         text-align: center;
@@ -26,13 +28,15 @@
 .subtitulo_inicio{
         margin-top: 50px;
         border-radius: 50%;
-        background-color: $colorprincipal;
+        background-color: rgba(112, 75, 7, 0.686);
+        color: $colorsecundario;
+        box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 20px;
         font-size: 40px;
         font-weight: bold;
         text-align: center;
 }
 .fondo_inicio{
-        background-image: url(../multimedia/Img/fondo\ completo.webp);
+        background-image: url(../multimedia/Img/fondo\ pantalla\ jarrones.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
