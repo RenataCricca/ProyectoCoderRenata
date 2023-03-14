@@ -20,11 +20,18 @@
     font-weight: bold;
     text-align: center;
 }
+
+.cuadros{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
 .cuadro_consulta{
-    
+    padding-left: 20px;
+    margin-top: 50px;
     height: 350px;
     width: 400px;
-    
+
 }
 .consulta{
     padding-top: 20px;
@@ -32,20 +39,24 @@
     margin-bottom: 10px;
     font-weight: bold;
     text-decoration:underline;
+    font-size: 30px;
+    
+    
 }
 
 
 /* aplicando estilo a la ubicación y mapa de la page contacto */
 .ubicacion{
-    margin-top: 80px;
-    padding-left: 200px;
-    margin-bottom: 10px;  
+    margin-top: 20px;
+    padding-left: 100px;
+    margin-bottom: 10px; 
+    font-size: 40px;
+    color: azure;
+    
 }
-.deco-mapa{
-    width: 650px;
-}
+
 .mapa{
-    padding-left: 50px;
+    padding-left: 20px;
     margin-bottom: 50px;
     width: 600px;
     height: 450px;
@@ -56,4 +67,7 @@
     .deco-#{$content} {
         background-color: $color;
     }
+}
+.deco-mapa{
+    width: 650px;
 }
