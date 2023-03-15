@@ -2,6 +2,12 @@
 .inicio{
         padding: 40px;
 }
+.fondo_inicio{
+        background-image: url(../multimedia/Img/fondo\ pantalla\ jarrones.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
 .titulo_inicio{
         margin-top: 10px;
         margin-bottom: 70px;
@@ -35,12 +41,7 @@
         font-weight: bold;
         text-align: center;
 }
-.fondo_inicio{
-        background-image: url(../multimedia/Img/fondo\ pantalla\ jarrones.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-}
+
 
 
 
